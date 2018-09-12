@@ -497,6 +497,7 @@
                                 android:inputType="text"/>
 
                             <EditText
+                                android:id="@+id/flightno"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:minWidth="100dp"
@@ -522,6 +523,7 @@
                                 android:inputType="text"/>
 
                             <EditText
+                                android:id="@+id/bay"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:minWidth="100dp"
@@ -559,6 +561,7 @@
                                 android:inputType="text"/>
 
                             <EditText
+                                android:id="@+id/ac_regis"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:minWidth="100dp"
@@ -583,6 +586,7 @@
                                 android:textSize="18dp" />
 
                             <EditText
+                                android:id="@+id/date"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:minWidth="100dp"
@@ -620,6 +624,7 @@
                                 android:inputType="text"/>
 
                             <EditText
+                                android:id="@+id/rfq"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="number|numberDecimal"
@@ -670,6 +675,7 @@
                                 android:orientation="horizontal">
 
                                 <Button
+                                    android:id="@+id/clearBtn"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:minWidth="140dp"

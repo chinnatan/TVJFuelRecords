@@ -25,6 +25,7 @@ public class FuelFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         initCalculateBtn();
+        initClearFieldBtn();
     }
 
     void checkField() {
@@ -93,6 +94,53 @@ public class FuelFragment extends Fragment {
         }
     }
 
+    void clearField() {
+        // Remain
+        EditText _remainLeft = getView().findViewById(R.id.remain_left);
+        EditText _remainCenter = getView().findViewById(R.id.remain_center);
+        EditText _remainRight = getView().findViewById(R.id.remain_right);
+        EditText _remainTotal = getView().findViewById(R.id.remain_total);
+        EditText _remainUplift = getView().findViewById(R.id.remain_uplift);
+        EditText _remainDensity = getView().findViewById(R.id.remain_density);
+        EditText _remainUpliftDensity = getView().findViewById(R.id.remain_uplift_density);
+        EditText _remainSum = getView().findViewById(R.id.remain_sum);
+
+        // Finalremain
+        EditText _finalremainLeft = getView().findViewById(R.id.finalremain_left);
+        EditText _finalremainCenter = getView().findViewById(R.id.finalremain_center);
+        EditText _finalremainRight = getView().findViewById(R.id.finalremain_right);
+        EditText _finalremainLeftCenterRight = getView().findViewById(R.id.finalremain_left_center_right);
+        EditText _finalremainTolerance = getView().findViewById(R.id.tolerance);
+
+        // Flight Info
+        EditText _flightinfoFlightno = getView().findViewById(R.id.flightno);
+        EditText _flightinfoBay = getView().findViewById(R.id.bay);
+        EditText _flightinfoAcRegis = getView().findViewById(R.id.ac_regis);
+        EditText _flightinfoDate = getView().findViewById(R.id.date);
+        EditText _flightinfoRFQ = getView().findViewById(R.id.rfq);
+
+        // ClearAll
+        _remainLeft.setText("");
+        _remainCenter.setText("");
+        _remainRight.setText("");
+        _remainTotal.setText("");
+        _remainUplift.setText("");
+        _remainDensity.setText("");
+        _remainUpliftDensity.setText("");
+        _remainSum.setText("");
+        _finalremainLeft.setText("");
+        _finalremainCenter.setText("");
+        _finalremainRight.setText("");
+        _finalremainLeftCenterRight.setText("");
+        _finalremainTolerance.setText("");
+        _flightinfoFlightno.setText("");
+        _flightinfoBay.setText("");
+        _flightinfoAcRegis.setText("");
+        _flightinfoDate.setText("");
+        _flightinfoRFQ.setText("");
+
+    }
+
     int calculateTotal(int left, int center, int right) {
         return left + center + right;
     }
@@ -111,6 +159,16 @@ public class FuelFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 checkField();
+            }
+        });
+    }
+
+    void initClearFieldBtn() {
+        Button _clear = getView().findViewById(R.id.clearBtn);
+        _clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clearField();
             }
         });
     }
