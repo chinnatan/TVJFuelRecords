@@ -497,8 +497,9 @@
                                 android:inputType="text"/>
 
                             <EditText
-                                android:layout_width="110dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:minWidth="100dp"
                                 android:inputType="text"
                                 android:theme="@android:style/Theme.Black"/>
 
@@ -521,8 +522,9 @@
                                 android:inputType="text"/>
 
                             <EditText
-                                android:layout_width="110dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:minWidth="100dp"
                                 android:inputType="text"
                                 android:theme="@android:style/Theme.Black"/>
 
@@ -557,8 +559,9 @@
                                 android:inputType="text"/>
 
                             <EditText
-                                android:layout_width="110dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:minWidth="100dp"
                                 android:inputType="text"
                                 android:theme="@android:style/Theme.Black"/>
 
@@ -580,8 +583,9 @@
                                 android:textSize="18dp" />
 
                             <EditText
-                                android:layout_width="110dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:minWidth="100dp"
                                 android:inputType="date"
                                 android:theme="@android:style/Theme.Black"/>
 
@@ -639,7 +643,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="160dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
@@ -647,9 +651,10 @@
                                 android:id="@+id/fuel_calculate"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:minWidth="140dp"
                                 android:text="@string/calculateBtn"
                                 android:textColor="@android:color/background_dark"
-                                android:background="@color/colorYellowText"/>
+                                android:background="@drawable/button"/>
 
                         </LinearLayout>
 
@@ -660,16 +665,17 @@
                             android:gravity="end">
 
                             <LinearLayout
-                                android:layout_width="160dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <Button
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:minWidth="140dp"
                                     android:text="@string/clearBtn"
                                     android:textColor="@android:color/background_dark"
-                                    android:background="@color/colorYellowText"/>
+                                    android:background="@drawable/button"/>
 
                             </LinearLayout>
 

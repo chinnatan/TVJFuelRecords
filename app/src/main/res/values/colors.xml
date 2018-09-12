@@ -7,4 +7,5 @@
     <color name="colorWhiteText">#FFFFFF</color>
     <color name="colorGrayHeader">#464646</color>
     <color name="colorRedBG">#ff2c2c</color>
+    <color name="colorYellowBtnPressed">#e0bb02</color>
 </resources>
