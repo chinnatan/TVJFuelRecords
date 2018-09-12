@@ -1,5 +1,6 @@
 package com.zkcnt.ntm.tvjfuelrecords;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -97,6 +98,10 @@ public class FuelFragment extends Fragment {
             _remainSum.setText(String.format("%d", _resultSum));
             _finalremainLeftCenterRight.setText(String.format("%d", _resultFinalLeftCenterRight));
             _finalremainTolerance.setText(String.format("%d", _resultTolerance));
+
+            if(_resultTolerance > 50 || _resultTolerance < -50) {
+                _finalremainTolerance.setTextColor(Color.parseColor("#FF0000"));
+            }
         }
     }
 
