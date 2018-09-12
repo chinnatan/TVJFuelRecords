@@ -70,8 +70,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="outputName" value="ic_multiply" />
+                                      <entry key="imageAsset" value="E:\Gallery's\Wallpaper\เฌอปราง\Cherpang300761 (9).jpg" />
+                                      <entry key="outputName" value="ic_laucher_cherpang" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -81,7 +83,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>

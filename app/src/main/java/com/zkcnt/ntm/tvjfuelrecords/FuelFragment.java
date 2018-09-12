@@ -12,7 +12,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class FuelFragment extends Fragment {
+
 
     @Nullable
     @Override
@@ -26,6 +31,7 @@ public class FuelFragment extends Fragment {
 
         initCalculateBtn();
         initClearFieldBtn();
+        autoDateCurrent();
     }
 
     void checkField() {
@@ -138,7 +144,7 @@ public class FuelFragment extends Fragment {
         _flightinfoAcRegis.setText("");
         _flightinfoDate.setText("");
         _flightinfoRFQ.setText("");
-
+        autoDateCurrent();
     }
 
     int calculateTotal(int left, int center, int right) {
@@ -151,6 +157,14 @@ public class FuelFragment extends Fragment {
 
     int calculateFinal(int left, int center, int right) {
         return left + center + right;
+    }
+
+    void autoDateCurrent() {
+        EditText _dateCurrent = getView().findViewById(R.id.date);
+        SimpleDateFormat dateF = new SimpleDateFormat("dd/MM/yy", Locale.getDefault());
+        String date = dateF.format(Calendar.getInstance().getTime());
+
+        _dateCurrent.setText(date);
     }
 
     void initCalculateBtn() {
