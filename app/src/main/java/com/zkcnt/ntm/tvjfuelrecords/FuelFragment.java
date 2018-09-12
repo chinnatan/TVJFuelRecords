@@ -101,6 +101,8 @@ public class FuelFragment extends Fragment {
 
             if(_resultTolerance > 50 || _resultTolerance < -50) {
                 _finalremainTolerance.setTextColor(Color.parseColor("#FF0000"));
+            } else {
+                _finalremainTolerance.setTextColor(Color.parseColor("#000000"));
             }
         }
     }
