@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TVJ FUEL RECORDS</string>
+    
+    <string name="FlightNo">Flight NO.</string>
+    <string name="Bay">Bay</string>
+    <string name="A_CRegis">A/C Regis</string>
+    <string name="Date">Date</string>
+    <string name="RequiredFuelQuantity">Required Fuel Quantity </string>
+    <string name="Remain"><u>Remain:</u></string>
+    <string name="left">LEFT</string>
+    <string name="center">CENTER</string>
+    <string name="right">RIGHT</string>
+    <string name="total">TOTAL</string>
+    <string name="uplift">UPLIFT</string>
+    <string name="density">DENSITY</string>
+    <string name="final_remain"><u>Final remain:</u></string>
+    <string name="sum">SUM:</string>
+    <string name="toleranceText">Tolerance: </string>
+    <string name="calculateBtn">Calculate</string>
+    <string name="clearBtn">Clear</string>
+    <string name="FlightInfo"><u>Flight Info:</u></string>
+</resources>

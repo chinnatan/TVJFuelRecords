@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRedBG">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Header-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrayHeader">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="24dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorYellowText"
+                    android:textStyle="bold|italic"/>
+
+            </LinearLayout>
+
+            <!--Box 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Remain"
+                            android:textSize="18dp"
+                            android:textColor="@color/colorWhiteText"
+                            android:textStyle="bold|italic"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/left"
+                                android:textColor="@color/colorWhiteText"
+                                android:gravity="center"
+                                android:textStyle="bold|italic"/>
+
+                            <EditText
+                                android:id="@+id/remain_left"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:theme="@android:style/Theme.Black"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/center"
+                                android:textColor="@color/colorWhiteText"
+                                android:gravity="center"
+                                android:textStyle="bold|italic"/>
+
+                            <EditText
+                                android:id="@+id/remain_center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/right"
+                                android:textColor="@color/colorWhiteText"
+                                android:gravity="center"
+                                android:textStyle="bold|italic"/>
+
+                            <EditText
+                                android:id="@+id/remain_right"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="end">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/total"
+                                    android:textColor="@color/colorWhiteText"
+                                    android:gravity="center"
+                                    android:textStyle="bold|italic"/>
+
+                                <EditText
+                                    android:id="@+id/remain_total"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:theme="@android:style/Theme.Black"
+                                    android:focusable="false"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/uplift"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"/>
+
+                            <EditText
+                                android:id="@+id/remain_uplift"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:theme="@android:style/Theme.Black"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/density"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"/>
+
+                            <EditText
+                                android:id="@+id/remain_density"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_multiply"
+                                android:inputType="number|numberDecimal"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_plus"
+                                    android:layout_gravity="right"
+                                    android:tint="@color/colorWhiteText"/>
+
+                                <EditText
+                                    android:id="@+id/remain_uplift_density"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:theme="@android:style/Theme.Black"
+                                    android:focusable="false"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Final Remain-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/final_remain"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/colorWhiteText"
+                                    android:textStyle="bold|italic"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sum"
+                                    android:textColor="@color/colorWhiteText"
+                                    android:textStyle="bold|italic"
+                                    android:textSize="18dp"/>
+
+                                <EditText
+                                    android:id="@+id/remain_sum"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:theme="@android:style/Theme.Black"
+                                    android:focusable="false"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/left"
+                                    android:textColor="@color/colorWhiteText"
+                                    android:textStyle="bold|italic"
+                                    android:textAlignment="center"/>
+
+                                <EditText
+                                    android:id="@+id/finalremain_left"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:theme="@android:style/Theme.Black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/center"
+                                    android:textColor="@color/colorWhiteText"
+                                    android:textStyle="bold|italic"
+                                    android:textAlignment="center"/>
+
+                                <EditText
+                                    android:id="@+id/finalremain_center"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:theme="@android:style/Theme.Black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/right"
+                                    android:textColor="@color/colorWhiteText"
+                                    android:textStyle="bold|italic"
+                                    android:textAlignment="center"/>
+
+                                <EditText
+                                    android:id="@+id/finalremain_right"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:theme="@android:style/Theme.Black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="end">
+
+                                <LinearLayout
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_delete"
+                                        android:tint="@color/colorWhiteText"
+                                        android:layout_gravity="right"/>
+
+                                    <EditText
+                                        android:id="@+id/finalremain_left_center_right"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="number"
+                                        android:theme="@android:style/Theme.Black"
+                                        android:focusable="false"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/toleranceText"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"
+                                android:textSize="20dp"/>
+
+                            <EditText
+                                android:id="@+id/tolerance"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:theme="@android:style/Theme.Black"
+                                android:focusable="false"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/FlightInfo"
+                            android:textColor="@color/colorWhiteText"
+                            android:textSize="20dp"
+                            android:textStyle="bold|italic"
+                            android:gravity=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/FlightNo"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"
+                                android:textSize="18dp"
+                                android:inputType="text"/>
+
+                            <EditText
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="end"
+                            android:gravity="end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Bay"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"
+                                android:textSize="18dp"
+                                android:inputType="text"/>
+
+                            <EditText
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/A_CRegis"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"
+                                android:textSize="18dp"
+                                android:inputType="text"/>
+
+                            <EditText
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="end"
+                            android:gravity="end">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Date"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"
+                                android:textSize="18dp" />
+
+                            <EditText
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="date"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/RequiredFuelQuantity"
+                                android:textColor="@color/colorWhiteText"
+                                android:textStyle="bold|italic"
+                                android:textSize="18dp"
+                                android:inputType="text"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number|numberDecimal"
+                                android:theme="@android:style/Theme.Black"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/fuel_calculate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/calculateBtn"
+                                android:textColor="@android:color/background_dark"
+                                android:background="@color/colorYellowText"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end">
+
+                            <LinearLayout
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/clearBtn"
+                                    android:textColor="@android:color/background_dark"
+                                    android:background="@color/colorYellowText"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
